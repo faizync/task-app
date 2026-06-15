@@ -10,7 +10,7 @@
 const { SecretsManagerClient, GetSecretValueCommand } = require('@aws-sdk/client-secrets-manager');
 
 const client = new SecretsManagerClient({
-  region: process.env.AWS_REGION || 'eu-west-2',
+  region: process.env.AWS_REGION || 'us-east-1',
 });
 
 async function getSecret(secretName) {
